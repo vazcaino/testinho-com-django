@@ -5,7 +5,7 @@ from blog.models import Category, Post
 
 
 def home(request):
-    name = "Wesley"
+    name = "Luciano"
     # categories = ['PHP', 'Java', 'Ruby']
     # for category in categories:
     #     Category.objects.create(name=category)
