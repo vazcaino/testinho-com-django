@@ -31,11 +31,13 @@ def home(request):
 
 
 def show_posts_by_category(request, category_id):
+    name = "Luciano"
     all_categories = Category.objects.all()
     category = Category.objects.get(pk=category_id)
     posts = Post.objects.filter(category=category, status='Published')
 
     context = {
+        'name': name,
         'posts': posts,
         'categories': all_categories,
         'category': category
